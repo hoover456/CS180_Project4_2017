@@ -78,7 +78,7 @@ public class ParserTest {
     // @ScoringWeight(.01)
     public void testGetLinks() throws Exception {
 
-        Document d = Jsoup.parse(new File("inputs/ParserTest1.html"), null);
+        Document d = Jsoup.parse(new File("src/inputs/ParserTest1.html"), null);
         assertNotEquals("Cannot find the local input file (Should not happen).",
                 null, d);
         Elements links = ps.getLinks(d);
@@ -118,7 +118,7 @@ public class ParserTest {
     @Test(timeout = 5000)
     // @ScoringWeight(.01)
     public void testGetBody() throws Exception {
-        Document d = Jsoup.parse(new File("inputs/ParserTest1.html"), null);
+        Document d = Jsoup.parse(new File("src/inputs/ParserTest1.html"), null);
         assertNotEquals("Cannot find the local input file (Should not happen).",
                 null, d);
 
