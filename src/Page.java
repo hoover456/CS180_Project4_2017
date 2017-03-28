@@ -15,7 +15,7 @@ public class Page implements Serializable, Comparable<Page> {
         return urlID;
     }
 
-    public String getUrl() {
+    public String getURL() {
         return url;
     }
 
@@ -23,7 +23,7 @@ public class Page implements Serializable, Comparable<Page> {
     public boolean equals(Object obj) {
         try {
             Page pageObj = (Page) obj; //convert obj to type Page
-            return (pageObj.getUrl().equals(this.url) || pageObj.getURLID() == this.urlID); //return true if URL or URLID is the same
+            return (pageObj.getURL().equals(this.url) || pageObj.getURLID() == this.urlID); //return true if URL or URLID is the same
         } catch (Exception e) {} //Catch error in obj conversion
         return false; //return false in all other cases
     }

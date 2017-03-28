@@ -1,4 +1,5 @@
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Word implements Serializable {
@@ -9,6 +10,7 @@ public class Word implements Serializable {
 
     public Word(String word, int urlID) {
         this.word = word;
+        this.postings = new ArrayList<Integer>();
         this.postings.add(urlID);
     }
 
