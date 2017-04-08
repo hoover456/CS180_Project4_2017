@@ -12,9 +12,9 @@ public class Parser {
 
         Document d; //declare document object
         try {
-            d = Jsoup.connect(url).get(); //try to get the document from the url via JSoup
+            d = Jsoup.connect(url).timeout(1000).get(); //try to get the document from the url via JSoup
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
             throw new ParseException("getDocument() failed. Connection failed."); //throw connection failed error if JSoup couldn't connect to the site
         }
         if(d==null){ //throw an error if the document returned by JSoup is null

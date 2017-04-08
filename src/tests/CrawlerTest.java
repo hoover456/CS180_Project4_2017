@@ -104,7 +104,7 @@ public class CrawlerTest {
     @Test(timeout = 600000)
     // @ScoringWeight(.01)
     public void TestCrawler() throws Exception {
-        cl = new Crawler("https://www.cs.purdue.edu/homes/bxd/", "www.cs.purdue.edu", 50);
+            cl = new Crawler("https://www.cs.purdue.edu/homes/bxd/", "www.cs.purdue.edu", 50);
         cl.crawl();
 
         assertEquals("Crawler.parsed doesn't contain some link addresses",
