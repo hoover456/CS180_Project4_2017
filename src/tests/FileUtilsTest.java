@@ -161,17 +161,17 @@ public class FileUtilsTest {
     @Test(timeout = 1000)
     // @ScoringWeight(.01)
     public void testGetWordList() throws Exception {
-        String fpath = "inputs/testWordTable1.txt";
+        String fpath = "src/inputs/testWordTable1.txt";
         List<Word> goldTable = _getWordList(fpath);
         List<Word> testTable = fu.getWordList(fpath);
         assertEquals(".getWordList() returns an incorrect list.", testTable, goldTable);
 
-        fpath = "inputs/testWordTable2.txt";
+        fpath = "src/inputs/testWordTable2.txt";
         goldTable = _getWordList(fpath);
         testTable = fu.getWordList(fpath);
         assertEquals(".getWordList() returns an incorrect list.", testTable, goldTable);
 
-        fpath = "inputs/testWordTable3.txt";
+        fpath = "src/inputs/testWordTable3.txt";
         goldTable = _getWordList(fpath);
         testTable = fu.getWordList(fpath);
         assertEquals(".getWordList() returns an incorrect list.", testTable, goldTable);
@@ -187,17 +187,17 @@ public class FileUtilsTest {
     @Test(timeout = 1000)
     // @ScoringWeight(.01)
     public void testGetPageList() throws Exception {
-        String fpath = "inputs/testPageTable1.txt";
+        String fpath = "src/inputs/testPageTable1.txt";
         List<Page> goldTable = _getPageList(fpath);
         List<Page> testTable = fu.getPageList(fpath);
         assertEquals(".getPageList() returns an incorrect list.", testTable, goldTable);
 
-        fpath = "inputs/testPageTable2.txt";
+        fpath = "src/inputs/testPageTable2.txt";
         goldTable = _getPageList(fpath);
         testTable = fu.getPageList(fpath);
         assertEquals(".getPageList() returns an incorrect list.", testTable, goldTable);
 
-        fpath = "inputs/testPageTable3.txt";
+        fpath = "src/inputs/testPageTable3.txt";
         goldTable = _getPageList(fpath);
         testTable = fu.getPageList(fpath);
         assertEquals(".getPageList() returns an incorrect list.", testTable, goldTable);
